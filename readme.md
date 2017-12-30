@@ -9,12 +9,9 @@
 ### Progress:
 - Was able to share components and services, but the build isn't as graceful as I'd like(there isn't a build-all command so I just added build all command in npm). To do this, `.angular-cli.json` needs to be changed to have multiple apps in its array. to run build or serve, run `ng build --app=0` or `ng build --app=frontend`.
 
-
 ### Thoughts:
 - not sure but it seems angular doesn't want to share things accross apps?
 - upon searches, there is a page that suggests using lazy load. [Link](https://github.com/angular/angular-cli/issues/3213)
-
-
 
 ### Link/s:
 - [Multi application Angular project](./projs/MultiAppInOne)
