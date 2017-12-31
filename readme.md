@@ -19,3 +19,26 @@
   - https://github.com/angular/angular-cli/wiki/stories-multiple-apps
   - https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project/
 
+## R1D2
+
+### Topics:
+
+- Try making modular angular application to practice modules.
+
+### Progress:
+
+- Added 2 modules About and Home
+- Added components to each and a service on About
+- App component uses About's alert service
+
+## Thoughts:
+
+- Learned:
+  - to **make service in module available** to all, add it to its containing module's **provider**, then add that module in the **imports** of the module you are going to add it in.
+  - to **make component/directive available** to all, add it to **exports**(it should be in the **directives** as well). To use the component in another module, or the root module, add it to the **imports** of the module where you're going to use it in.
+
+### Link/s:
+- [Module test application](./projs/ModuleTest)
+- #### Other links
+  - https://angular.io/guide/ngmodule
+

@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+// import { IntroComponent } from './about/intro/intro.component';
+import { HomeModule } from './home/home/home.module';
+import { AboutModule } from './about/about/about.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // IntroComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HomeModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
