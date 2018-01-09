@@ -6,7 +6,6 @@ import { SharedService } from "../shared/shared-service/shared-service.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  title = "app";
   constructor(private sharedService: SharedService) {}
   ngOnInit() {
     this.sharedService.test();
