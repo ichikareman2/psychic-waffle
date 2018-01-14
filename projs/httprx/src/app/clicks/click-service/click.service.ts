@@ -51,7 +51,7 @@ export class ClickService {
     }
     return this.cachedClickList;
   }
-  addCachedClick(click: Click): void {
+  addCachedClick(click: Click): Observable<Object> {
     let tempClicks: Click[];
     // let tempSub = this.cachedClickList.subscribe(
     //   x => this.cachedClickList.next(x.concat(click))
@@ -63,7 +63,7 @@ export class ClickService {
     tempClicks.push(click)
     this.cachedClickList.next(tempClicks)
     let url = `http://localhost:3000/clicks`;
-    this.http.post(url,click)
+    return this.http.post(url,click)
     // Observable.create().take();
   }
 }

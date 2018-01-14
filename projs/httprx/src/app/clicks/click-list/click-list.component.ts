@@ -22,7 +22,7 @@ export class ClickListComponent implements OnInit {
     let click = new Click(now, ev.x, ev.y);
 
     // this.clickList.push(click);
-    this.clickService.addCachedClick(click)//.subscribe(x => console.log(x));
+    // this.clickService.addCachedClick(click)//.subscribe(x => console.log(x));
   }
 
   getClickList() {
