@@ -1,0 +1,18 @@
+<div (click)="clicked($event)">
+  <table class="table">
+    <thead>
+      <tr>
+      <th>Timestamp</th>
+      <th>coor-x</th>
+      <th>{{Click}}</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let click of clickList">
+        <td>{{click.timestamp | date:'full'}}</td>
+        <td>{{click.x}}</td>
+        <td>{{click.y}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
