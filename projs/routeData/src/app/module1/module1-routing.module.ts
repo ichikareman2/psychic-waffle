@@ -6,6 +6,7 @@ import { Business2Component } from './business2/business2.component';
 const routes: Routes = [
   {path:"1",component:BusinessComponent},
   {path:"2",component:Business2Component},
+  {path:"admin",component:Business2Component, data: { isAdminPage: false } },
   {path:"",component:BusinessComponent}
 ];
 

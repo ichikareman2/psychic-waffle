@@ -1,1 +1,4 @@
 <app-view></app-view>
+<!-- <button (click)="toggleRole()">toggle role</button> -->
+<button (click)="isAdminRole=!isAdminRole">toggle role</button>
+{{isAdminRole ? "admin" : "business"}}

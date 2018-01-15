@@ -8,6 +8,7 @@ import { AdminComponent } from './module2/admin/admin.component';
 import { Module1Module } from './module1/module1.module';
 import { Module2Module } from './module2/module2.module';
 import { LayoutModule } from './layout/layout.module';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { LayoutModule } from './layout/layout.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoreModule,
 
     Module1Module,
     Module2Module,
